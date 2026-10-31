@@ -78,7 +78,7 @@
 </tbody>
 </table>
 <p>No legítimo interesse, fizemos uma avaliação de que o tratamento é necessário, mínimo e esperado por você. Você pode se opor a ele pelo canal do item B.1 (art. 18, § 2º).</p>
-<p><strong>Minimização (art. 6º, III).</strong> O Aplicativo trata dados do veículo, não da sua vida privada. Na leitura de comprovantes, extraímos só data, quilometragem, itens de manutenção e prazo de garantia. Nomes, CPF, RG, telefones, endereços e dados de cartão que apareçam na nota não são gravados. Antes de enviar texto ao provedor de inteligência artificial, mascaramos dados pessoais e registramos a operação.</p>
+<p><strong>Minimização (art. 6º, III).</strong> O Aplicativo trata dados do veículo, não da sua vida privada. Na leitura de comprovantes, extraímos só data, quilometragem, itens de manutenção e prazo de garantia. Nomes, CPF, RG, telefones, endereços e dados de cartão que apareçam na nota não são gravados. O modelo de inteligência artificial roda em servidor nosso, no Brasil, e o texto não é enviado a terceiros. Mesmo assim, mascaramos dados pessoais antes do processamento e registramos a operação.</p>
 <p>O Aplicativo não trata dados pessoais sensíveis (art. 5º, II), não usa seus dados para publicidade ou perfilamento e não toma decisões automatizadas que afetem seus interesses (art. 20): lembretes e previsões são sugestões que você confere.</p>
 <p><strong>Tratamento como condição do serviço (art. 9º, § 3º).</strong> Para usar o Aplicativo, precisamos tratar os dados de conta e de veículo da tabela. Sem eles, não há como sincronizar nem calcular revisões. Fotos de comprovantes são opcionais.</p>
 
@@ -91,7 +91,7 @@
 <tr><td>Cópias de segurança do servidor</td><td>Até 30 dias após a exclusão, quando são sobrescritas</td></tr>
 <tr><td>Registros de segurança e de alterações</td><td>6 meses</td></tr>
 <tr><td>Relatórios de erro (Sentry)</td><td>90 dias</td></tr>
-<tr><td>Texto enviado ao provedor de IA</td><td>[prazo de retenção a confirmar no contrato do provedor]</td></tr>
+<tr><td>Texto do comprovante processado pelo modelo de IA</td><td>Não é guardado após o processamento; só o resultado (itens de manutenção) entra no seu histórico</td></tr>
 <tr><td>Registro de que a exclusão ocorreu</td><td>5 anos, para provar o atendimento do seu pedido (art. 16, I, e art. 7º, VI)</td></tr>
 </tbody>
 </table>
@@ -100,7 +100,6 @@
 <p>Não vendemos seus dados. Compartilhamos o mínimo necessário com:</p>
 <ul>
 <li><strong>Google (login e Google Drive), serviço escolhido por você.</strong> O Google trata os dados da sua conta Google conforme a política de privacidade dele. Seus comprovantes ficam na pasta "TabulaCar" do seu Google Drive, com acesso limitado aos arquivos criados pelo Aplicativo (escopo <code>drive.file</code>). Guardamos só o identificador do arquivo, o link de visualização e a credencial de acesso, cifrada.</li>
-<li><strong>DeepSeek, operador.</strong> Recebe apenas o texto do comprovante já mascarado, para identificar itens de manutenção. Processa na China. [Confirmar no contrato do provedor o prazo de retenção e se os dados são usados para treinar modelos.]</li>
 <li><strong>Sentry, operador.</strong> Recebe dados técnicos de falha, com o envio de dados pessoais padrão desativado e o identificador interno como única referência à conta. Região: [EUA / UE].</li>
 <li><strong>[Nome do provedor de hospedagem], operador.</strong> Mantém os servidores e o banco de dados do serviço, em [país].</li>
 <li><strong>Autoridades,</strong> quando a lei ou ordem judicial exigir.</li>
@@ -108,7 +107,7 @@
 <p>Os operadores tratam dados só em nosso nome e conforme nossas instruções (art. 39).</p>
 
 <h2>B.5 Transferência internacional</h2>
-<p>Google, Sentry, DeepSeek e [provedor de hospedagem] podem processar dados fora do Brasil, em [países]. Essas transferências se apoiam em:</p>
+<p>Google, Sentry e [provedor de hospedagem] podem processar dados fora do Brasil, em [países]. Essas transferências se apoiam em:</p>
 <ul>
 <li><strong>cláusulas-padrão contratuais aprovadas pela ANPD</strong>, adotadas nos contratos com esses provedores (LGPD, art. 33, II, "b", e Resolução CD/ANPD nº 19/2024); ou</li>
 <li><strong>destino reconhecido como adequado</strong>, quando o processamento ocorre na União Europeia (art. 33, I, e Resolução CD/ANPD nº 32/2026).</li>

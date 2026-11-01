@@ -99,7 +99,7 @@
 <h2>B.4 Com quem compartilhamos</h2>
 <p>Não vendemos seus dados. Compartilhamos o mínimo necessário com:</p>
 <ul>
-<li><strong>Google (login e Google Drive), serviço escolhido por você.</strong> O Google trata os dados da sua conta Google conforme a política de privacidade dele. Seus comprovantes ficam na pasta "TabulaCar" do seu Google Drive, com acesso limitado aos arquivos criados pelo Aplicativo (escopo <code>drive.file</code>). Guardamos só o identificador do arquivo, o link de visualização e a credencial de acesso, cifrada.</li>
+<li><strong>Google (login e Google Drive), serviço escolhido por você.</strong> O Google trata os dados da sua conta Google conforme a política de privacidade dele. Seu backup e as fotos dos comprovantes ficam na pasta oculta do Aplicativo no seu Google Drive (escopo <code>drive.appdata</code>), que não aparece na lista do Drive. O acesso fica limitado a essa pasta e aos arquivos criados pelo Aplicativo (escopo <code>drive.file</code>). Guardamos só o identificador do arquivo, o link de visualização e a credencial de acesso, cifrada.</li>
 <li><strong>Sentry, operador.</strong> Recebe dados técnicos de falha, com o envio de dados pessoais padrão desativado e o identificador interno como única referência à conta. Região: [EUA / UE].</li>
 <li><strong>[Nome do provedor de hospedagem], operador.</strong> Mantém os servidores e o banco de dados do serviço, em [país].</li>
 <li><strong>Autoridades,</strong> quando a lei ou ordem judicial exigir.</li>
@@ -137,10 +137,11 @@
 <p>Você pode gerar o Dossiê de Manutenção do veículo para mostrar a um comprador. Por padrão, ele omite valores e dados do proprietário, mas pode conter placa, chassi e quilometragem. Compartilhá-lo é uma decisão sua.</p>
 
 <h2>B.9 Exportação e exclusão da conta</h2>
-<p>Você pode exportar todos os seus dados em formato estruturado e salvar um backup na pasta "TabulaCar/backup" do seu Google Drive, pelo Aplicativo.</p>
+<p>Você pode exportar todos os seus dados em formato estruturado e salvar um backup, com as fotos dos comprovantes, na pasta oculta do Aplicativo no seu Google Drive.</p>
 <p>Para excluir a conta, use "Excluir minha conta" na aba de documentos do Aplicativo ou peça pelo canal do item B.1. A exclusão:</p>
 <ul>
 <li>apaga de forma definitiva sua conta e seus registros do nosso servidor;</li>
+<li>apaga o backup e as fotos da pasta oculta do Aplicativo no seu Google Drive;</li>
 <li>apaga a credencial de acesso ao seu Google Drive e revoga o acesso do Aplicativo a ele;</li>
 <li>remove os dados das cópias de segurança no prazo do item B.3.</li>
 </ul>

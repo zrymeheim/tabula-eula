@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>TabulaHome: convite para um lar</title>
+<meta name="robots" content="noindex">
+<link rel="stylesheet" href="../style.css">
+</head>
+<body>
+<main>
+<h1>TabulaHome</h1>
+<p>Você recebeu um convite para entrar em um lar no TabulaHome.</p>
+<p><a id="open" href="#">Abrir no aplicativo</a></p>
+<p class="meta">Código: <strong id="code"></strong></p>
+<p class="meta">Se o aplicativo não abrir, instale o TabulaHome e digite o código na tela de convite.</p>
+</main>
+<script>
+var code=(new URLSearchParams(location.search).get("code")||"").replace(/[^A-Za-z0-9]/g,"");
+var link="tabulahome://convite/"+code;
+document.getElementById("code").textContent=code;
+document.getElementById("open").href=link;
+if(code)location.href=link;
+</script>
+</body>
+</html>

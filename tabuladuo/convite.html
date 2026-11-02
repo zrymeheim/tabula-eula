@@ -16,7 +16,7 @@
 <p class="meta">Se o aplicativo não abrir, instale o TabulaDuo e digite o código na tela de convite.</p>
 </main>
 <script>
-var code=(new URLSearchParams(location.search).get("code")||"").replace(/[^A-Za-z0-9]/g,"");
+var code=(new URLSearchParams(location.hash.slice(1)).get("code")||new URLSearchParams(location.search).get("code")||"").replace(/[^A-Za-z0-9]/g,"");
 var link="tabuladuo://invite/"+code;
 document.getElementById("code").textContent=code;
 document.getElementById("open").href=link;

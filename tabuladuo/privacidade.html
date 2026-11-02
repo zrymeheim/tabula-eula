@@ -40,7 +40,7 @@
 <p><strong>Tratamento como condição do serviço (art. 9º, § 3º).</strong> Para usar o Aplicativo, precisamos tratar os dados de conta e de casal da tabela. Sem eles, não há como compartilhar o diário.</p>
 
 <h2 id="b3">B.3 Onde ficam os dados e por quanto tempo</h2>
-<p>Os dados ficam em servidores do Google Cloud na região de São Paulo (southamerica-east1), com comunicação cifrada (HTTPS). O aparelho guarda a sessão e a fila de notas e gostos registrados sem conexão.</p>
+<p>Os dados ficam em servidores do Google Cloud na região de São Paulo (southamerica-east1), com comunicação cifrada (HTTPS). O conteúdo do casal (lugares, visitas, notas, gostos, alergias, fotos, áudio e a data de início) é cifrado no seu aparelho antes de ser enviado: os servidores guardam só texto cifrado e não conseguem lê-lo. A chave fica nos aparelhos do casal e na chave de recuperação que só você guarda. O aparelho guarda a sessão e a chave do casal.</p>
 <table>
 <thead><tr><th>Dado</th><th>Prazo de guarda</th></tr></thead>
 <tbody>
@@ -92,7 +92,7 @@
 <p>Quem sai do casal perde o acesso aos dados dele. O administrador só sai depois que o par sair.</p>
 
 <h2 id="b9">B.9 Segurança e incidentes</h2>
-<p>Adotamos medidas técnicas e administrativas para proteger seus dados (art. 46): comunicação cifrada, regras do banco de dados que negam todo acesso direto do aplicativo, verificação da sua identidade e do seu vínculo com o casal em toda requisição e registro de auditoria das alterações.</p>
+<p>Adotamos medidas técnicas e administrativas para proteger seus dados (art. 46): comunicação cifrada, cifragem de ponta a ponta do conteúdo do casal (sem a chave, nem o controlador nem o Google leem esses dados; sem a chave e sem a chave de recuperação, não é possível recuperá-los), regras do banco de dados que negam todo acesso direto do aplicativo, verificação da sua identidade e do seu vínculo com o casal em toda requisição e registro de auditoria das alterações.</p>
 <p>Se ocorrer incidente de segurança que possa afetar significativamente seus direitos, comunicaremos você e a ANPD em até 3 dias úteis (6 dias úteis, por sermos agente de pequeno porte) a partir do momento em que soubermos que dados pessoais foram afetados, com o que aconteceu, quais dados, os riscos e o que estamos fazendo (LGPD, art. 48, e Resolução CD/ANPD nº 15/2024). Registramos todos os incidentes por 5 anos.</p>
 
 <h2 id="b10">B.10 Crianças e adolescentes</h2>

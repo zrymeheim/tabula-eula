@@ -1,6 +1,6 @@
 # tabula-eula
 
-Páginas públicas dos apps TabulaCar e TabulaHome, publicadas via GitHub Pages.
+Páginas públicas dos apps TabulaCar, TabulaHome e TabulaDuo, publicadas via GitHub Pages.
 
 | Página | TabulaCar | TabulaHome |
 |---|---|---|

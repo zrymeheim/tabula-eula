@@ -83,6 +83,48 @@
           ]
         }
       ]
+    },
+    {
+      "site": "tabulahome",
+      "public": ".",
+      "ignore": [
+        "firebase.json",
+        ".firebaserc",
+        "**/.*",
+        "README.md",
+        "index.html",
+        "tabulacar/**",
+        "tabuladuo/**"
+      ],
+      "rewrites": [
+        {
+          "source": "/",
+          "destination": "/tabulahome/index.html"
+        },
+        {
+          "source": "/privacidade.html",
+          "destination": "/tabulahome/privacidade.html"
+        },
+        {
+          "source": "/termos.html",
+          "destination": "/tabulahome/termos.html"
+        }
+      ],
+      "headers": [
+        {
+          "source": "**",
+          "headers": [
+            {
+              "key": "X-Content-Type-Options",
+              "value": "nosniff"
+            },
+            {
+              "key": "Referrer-Policy",
+              "value": "strict-origin-when-cross-origin"
+            }
+          ]
+        }
+      ]
     }
   ]
 }

@@ -1,19 +1,88 @@
 {
-  "hosting": {
-    "site": "tabulacar",
-    "public": ".",
-    "ignore": ["firebase.json", ".firebaserc", "**/.*", "README.md", "index.html", "tabulahome/**", "tabuladuo/**"],
-    "cleanUrls": false,
-    "rewrites": [
-      { "source": "/", "destination": "/tabulacar/index.html" },
-      { "source": "/privacidade.html", "destination": "/tabulacar/privacidade.html" },
-      { "source": "/termos.html", "destination": "/tabulacar/termos.html" }
-    ],
-    "headers": [
-      { "source": "**", "headers": [
-        { "key": "X-Content-Type-Options", "value": "nosniff" },
-        { "key": "Referrer-Policy", "value": "strict-origin-when-cross-origin" }
-      ] }
-    ]
-  }
+  "hosting": [
+    {
+      "site": "tabulacar",
+      "public": ".",
+      "ignore": [
+        "firebase.json",
+        ".firebaserc",
+        "**/.*",
+        "README.md",
+        "index.html",
+        "tabulahome/**",
+        "tabuladuo/**"
+      ],
+      "rewrites": [
+        {
+          "source": "/",
+          "destination": "/tabulacar/index.html"
+        },
+        {
+          "source": "/privacidade.html",
+          "destination": "/tabulacar/privacidade.html"
+        },
+        {
+          "source": "/termos.html",
+          "destination": "/tabulacar/termos.html"
+        }
+      ],
+      "headers": [
+        {
+          "source": "**",
+          "headers": [
+            {
+              "key": "X-Content-Type-Options",
+              "value": "nosniff"
+            },
+            {
+              "key": "Referrer-Policy",
+              "value": "strict-origin-when-cross-origin"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "site": "tabuladuo",
+      "public": ".",
+      "ignore": [
+        "firebase.json",
+        ".firebaserc",
+        "**/.*",
+        "README.md",
+        "index.html",
+        "tabulahome/**",
+        "tabulacar/**"
+      ],
+      "rewrites": [
+        {
+          "source": "/",
+          "destination": "/tabuladuo/index.html"
+        },
+        {
+          "source": "/privacidade.html",
+          "destination": "/tabuladuo/privacidade.html"
+        },
+        {
+          "source": "/termos.html",
+          "destination": "/tabuladuo/termos.html"
+        }
+      ],
+      "headers": [
+        {
+          "source": "**",
+          "headers": [
+            {
+              "key": "X-Content-Type-Options",
+              "value": "nosniff"
+            },
+            {
+              "key": "Referrer-Policy",
+              "value": "strict-origin-when-cross-origin"
+            }
+          ]
+        }
+      ]
+    }
+  ]
 }

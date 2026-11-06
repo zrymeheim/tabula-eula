@@ -1,0 +1,19 @@
+{
+  "hosting": {
+    "site": "tabulacar",
+    "public": ".",
+    "ignore": ["firebase.json", ".firebaserc", "**/.*", "README.md", "index.html", "tabulahome/**", "tabuladuo/**"],
+    "cleanUrls": false,
+    "rewrites": [
+      { "source": "/", "destination": "/tabulacar/index.html" },
+      { "source": "/privacidade.html", "destination": "/tabulacar/privacidade.html" },
+      { "source": "/termos.html", "destination": "/tabulacar/termos.html" }
+    ],
+    "headers": [
+      { "source": "**", "headers": [
+        { "key": "X-Content-Type-Options", "value": "nosniff" },
+        { "key": "Referrer-Policy", "value": "strict-origin-when-cross-origin" }
+      ] }
+    ]
+  }
+}

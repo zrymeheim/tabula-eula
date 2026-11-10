@@ -10,7 +10,7 @@
 <main>
 <p class="meta"><a href="./">TabulaDuo</a> · <a href="termos.html">Termos de Uso</a></p>
 <h1>TabulaDuo — Aviso de Privacidade</h1>
-<p class="meta">Versão 1.1 · Última atualização: 04/11/2026 · Elaborado com base na Lei nº 8.078/1990 (CDC), na Lei nº 9.609/1998 (Lei do Software) e na Lei nº 13.709/2018 (LGPD)</p>
+<p class="meta">Versão 1.2 · Última atualização: 09/11/2026 · Elaborado com base na Lei nº 8.078/1990 (CDC), na Lei nº 9.609/1998 (Lei do Software) e na Lei nº 13.709/2018 (LGPD)</p>
 
 <p>Este aviso é a Parte B dos <a href="termos.html">Termos de Uso do TabulaDuo</a>.</p>
 <h2 id="parte-b">PARTE B — AVISO DE PRIVACIDADE (LGPD, art. 9º)</h2>
@@ -54,6 +54,7 @@
 <tr><td>Notas e gostos de quem saiu do casal</td><td>Ficam com o par, com o identificador de quem os registrou, até o pedido de exclusão (item B.8)</td></tr>
 <tr><td>Registros de alterações</td><td>Enquanto o casal existir</td></tr>
 <tr><td>Texto da busca de endereço e posição usada para sugerir endereços</td><td>Não guardamos; o Google os trata só para responder a busca, conforme os termos da Google Maps Platform</td></tr>
+<tr><td>Identificador do lugar no Google (place ID) e posição do lugar escolhido na busca</td><td>O place ID fica cifrado junto ao lugar ou desejo, para abrir o Google Maps. A posição vinda do Google é atualizada a cada 30 dias e apagada se não puder ser atualizada. O endereço do Google não é guardado: o Aplicativo o consulta de novo ao abrir o lugar</td></tr>
 <tr><td>Backup da chave no Google Drive</td><td>Fica na sua conta Google; o Aplicativo o apaga quando você sai do casal ou exclui a conta, se ainda tiver acesso ao Drive. Você também pode apagá-lo pela própria conta Google</td></tr>
 <tr><td>Calendário "TabulaDuo" no Google Agenda</td><td>Fica na sua conta Google, sob o seu controle, mesmo depois de desativar a opção ou excluir a conta; apague-o no Google Agenda quando quiser</td></tr>
 </tbody>
@@ -63,9 +64,9 @@
 <p>Não vendemos dados. Compartilhamos o mínimo necessário com:</p>
 <ul>
 <li><strong>Seu par.</strong> Vê os dados do casal e o seu nome e foto, como descrito no <a href="termos.html#item-4">item 4 da Parte A</a>. Esse compartilhamento é a função central do Aplicativo e acontece por sua escolha ao entrar em um casal ou convidar alguém.</li>
-<li><strong>Google, operador.</strong> Faz o login (Firebase Authentication) e mantém o banco de dados (Firestore) e o servidor (Cloud Run) do serviço, conforme a política de privacidade e os termos de tratamento de dados do Google Cloud. Também responde a busca de endereço (Google Places): o aparelho envia o texto digitado e, se você permitiu a localização, a sua posição atual para priorizar endereços próximos.</li>
+<li><strong>Google, operador.</strong> Faz o login (Firebase Authentication) e mantém o banco de dados (Firestore) e o servidor (Cloud Run) do serviço, conforme a política de privacidade e os termos de tratamento de dados do Google Cloud. Também responde a busca de endereço (Google Places): o aparelho envia o texto digitado e, se você permitiu a localização, a sua posição atual para priorizar endereços próximos. Ao abrir um lugar ou atualizar a posição de um lugar escolhido na busca, o aparelho envia ao Google só o identificador do lugar. O App Check (Play Integrity) confere que as requisições vêm do Aplicativo original.</li>
 <li><strong>Sua própria conta Google, por sua escolha.</strong> Se você ativar o backup, o Aplicativo grava uma cópia cifrada da chave do casal numa pasta oculta do Aplicativo no seu Google Drive (permissão <code>drive.appdata</code>, que só alcança essa pasta). Se você ativar "Sincronizar com o Google Agenda", o Aplicativo cria um calendário "TabulaDuo" na sua conta e grava nele os compromissos e o aniversário do casal (permissão <code>calendar.app.created</code>, que só alcança esse calendário, nunca os seus outros). Esses dados vão direto do aparelho para a sua conta, sem passar pelos nossos servidores, e o seu uso segue a política de privacidade do Google. O Aplicativo usa os dados das APIs do Google apenas para essas funções e segue a Política de Dados do Usuário dos Serviços de API do Google, incluindo os requisitos de uso limitado.</li>
-<li><strong>OpenStreetMap.</strong> O mapa carrega as imagens do mapa dos servidores do OpenStreetMap, que recebem o seu endereço IP e a região exibida, como acontece em qualquer site de mapa. Nenhum dado do casal é enviado.</li>
+<li><strong>OpenStreetMap.</strong> O mapa carrega as imagens do mapa dos servidores do OpenStreetMap, que recebem o seu endereço IP e a região exibida, como acontece em qualquer site de mapa. O código do mapa (Leaflet) vem do serviço unpkg, que também recebe o seu endereço IP. Nenhum dado do casal é enviado.</li>
 <li><strong>Autoridades,</strong> quando a lei ou ordem judicial exigir.</li>
 </ul>
 <p>O operador trata dados só em nosso nome e conforme nossas instruções (art. 39). Hoje não usamos provedor de inteligência artificial. Se isso mudar, atualizaremos este aviso, nomeando o provedor, e avisaremos no Aplicativo antes de começar.</p>

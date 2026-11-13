@@ -10,7 +10,7 @@
 <main>
 <p class="meta"><a href="./">TabulaDuo</a> · <a href="termos.html">Termos de Uso</a></p>
 <h1>TabulaDuo — Aviso de Privacidade</h1>
-<p class="meta">Versão 1.4 · Última atualização: 10/11/2026 · Elaborado com base na Lei nº 8.078/1990 (CDC), na Lei nº 9.609/1998 (Lei do Software) e na Lei nº 13.709/2018 (LGPD)</p>
+<p class="meta">Versão 1.5 · Última atualização: 13/11/2026 · Elaborado com base na Lei nº 8.078/1990 (CDC), na Lei nº 9.609/1998 (Lei do Software) e na Lei nº 13.709/2018 (LGPD)</p>
 
 <p>Este aviso é a Parte B dos <a href="termos.html">Termos de Uso do TabulaDuo</a>.</p>
 <h2 id="parte-b">PARTE B — AVISO DE PRIVACIDADE (LGPD, art. 9º)</h2>
@@ -55,8 +55,8 @@
 <tr><td>Notas e gostos de quem saiu do casal</td><td>Ficam com o par, com o identificador de quem os registrou, até o pedido de exclusão (item B.8)</td></tr>
 <tr><td>Registros de alterações</td><td>Enquanto o casal existir</td></tr>
 <tr><td>Relatórios de falhas</td><td>Até 90 dias no Sentry, conforme o plano</td></tr>
-<tr><td>Texto da busca de endereço e posição usada para sugerir endereços</td><td>Não guardamos; o Google os trata só para responder a busca, conforme os termos da Google Maps Platform</td></tr>
-<tr><td>Identificador do lugar no Google (place ID) e posição do lugar escolhido na busca</td><td>O place ID fica cifrado junto ao lugar ou desejo, para abrir o Google Maps. A posição vinda do Google é atualizada a cada 30 dias e apagada se não puder ser atualizada. O endereço do Google não é guardado: o Aplicativo o consulta de novo ao abrir o lugar</td></tr>
+<tr><td>Texto da busca de endereço e posição aproximada (arredondada a cerca de 1 km) usada para sugerir endereços</td><td>Enviados só quando você toca em Buscar, pelo nosso servidor ao provedor de busca (Geoapify). Não guardamos o texto nem a posição, não enviamos ao provedor o seu identificador nem o seu IP (o provedor vê o IP do nosso servidor) e o conteúdo do casal não é enviado. Você pode preencher endereço e pino sem usar a busca</td></tr>
+<tr><td>Link do Google Maps e posição do lugar</td><td>O link que você cola e a posição que você escolhe ficam cifrados junto ao lugar ou desejo. O Aplicativo não lê o nome nem o endereço do link. Em lugares criados antes desta versão, a posição que veio do Google foi apagada e o identificador antigo (place ID) fica cifrado só para você recuperar o lugar; ele é apagado quando você recupera ou descarta o lugar</td></tr>
 <tr><td>Backup da chave no Google Drive</td><td>Fica na sua conta Google; o Aplicativo o apaga quando você sai do casal ou exclui a conta, se ainda tiver acesso ao Drive. Você também pode apagá-lo pela própria conta Google</td></tr>
 <tr><td>Calendário "TabulaDuo" no Google Agenda</td><td>Fica na sua conta Google, sob o seu controle, mesmo depois de desativar a opção ou excluir a conta; apague-o no Google Agenda quando quiser</td></tr>
 </tbody>
@@ -66,8 +66,9 @@
 <p>Não vendemos dados. Compartilhamos o mínimo necessário com:</p>
 <ul>
 <li><strong>Seu par.</strong> Vê os dados do casal e o seu nome e foto, como descrito no <a href="termos.html#item-4">item 4 da Parte A</a>. Esse compartilhamento é a função central do Aplicativo e acontece por sua escolha ao entrar em um casal ou convidar alguém.</li>
-<li><strong>Google, operador.</strong> Faz o login (Firebase Authentication) e mantém o banco de dados (Firestore) e o servidor (Cloud Run) do serviço, conforme a política de privacidade e os termos de tratamento de dados do Google Cloud. Também responde a busca de endereço (Google Places): o aparelho envia o texto digitado e, se você permitiu a localização, a sua posição atual para priorizar endereços próximos. Ao abrir um lugar ou atualizar a posição de um lugar escolhido na busca, o aparelho envia ao Google só o identificador do lugar. O App Check (Play Integrity) confere que as requisições vêm do Aplicativo original.</li>
+<li><strong>Google, operador.</strong> Faz o login (Firebase Authentication) e mantém o banco de dados (Firestore) e o servidor (Cloud Run) do serviço, conforme a política de privacidade e os termos de tratamento de dados do Google Cloud. O App Check (Play Integrity) confere que as requisições vêm do Aplicativo original.</li>
 <li><strong>Sua própria conta Google, por sua escolha.</strong> Se você ativar o backup, o Aplicativo grava uma cópia cifrada da chave do casal numa pasta oculta do Aplicativo no seu Google Drive (permissão <code>drive.appdata</code>, que só alcança essa pasta). Se você ativar "Sincronizar com o Google Agenda", o Aplicativo cria um calendário "TabulaDuo" na sua conta e grava nele os compromissos e o aniversário do casal (permissão <code>calendar.app.created</code>, que só alcança esse calendário, nunca os seus outros). Esses dados vão direto do aparelho para a sua conta, sem passar pelos nossos servidores, e o seu uso segue a política de privacidade do Google. O Aplicativo usa os dados das APIs do Google apenas para essas funções e segue a Política de Dados do Usuário dos Serviços de API do Google, incluindo os requisitos de uso limitado.</li>
+<li><strong>Geoapify, operador da busca de endereço.</strong> Recebe, pelo nosso servidor, o texto digitado e a posição aproximada quando você toca em Buscar, e devolve sugestões de endereço com dados do OpenStreetMap (© colaboradores do OpenStreetMap, Powered by Geoapify).</li>
 <li><strong>Google Maps.</strong> O mapa do Aplicativo usa o Google Maps (Maps SDK for Android), que recebe o seu endereço IP e a região exibida, como acontece em qualquer aplicativo de mapa. Os pinos dos lugares são desenhados no aparelho; o nome e a nota dos lugares não são enviados ao Google.</li>
 <li><strong>Sentry, operador.</strong> Quando os relatórios de falhas estão ativos no Android, o Sentry recebe dados técnicos na União Europeia para ajudar a corrigir o aplicativo. Os relatórios não incluem mensagens de erro, conteúdo do casal, dados da conta ou gravações de tela. O Sentry não guarda o endereço IP nos eventos.</li>
 <li><strong>Autoridades,</strong> quando a lei ou ordem judicial exigir.</li>
@@ -75,7 +76,7 @@
 <p>O operador trata dados só em nosso nome e conforme nossas instruções (art. 39). Hoje não usamos provedor de inteligência artificial. Se isso mudar, atualizaremos este aviso, nomeando o provedor, e avisaremos no Aplicativo antes de começar.</p>
 
 <h2 id="b5">B.5 Transferência internacional</h2>
-<p>O banco de dados e o servidor ficam no Brasil. O Firebase Authentication processa os dados da conta, e o Google Places processa a busca de endereço, na infraestrutura global do Google, fora do Brasil. As imagens do mapa vêm de servidores do Google Maps no exterior. Essa transferência se apoia em cláusulas-padrão contratuais aprovadas pela ANPD, adotadas nos contratos do Google Cloud (LGPD, art. 33, II, "b", e Resolução CD/ANPD nº 19/2024), e é necessária para executar o contrato que você pediu (art. 33, IX). Você pode pedir a íntegra das cláusulas pelo canal do item B.1; respondemos em até 15 dias (Resolução CD/ANPD nº 19/2024, art. 17).</p>
+<p>O banco de dados e o servidor ficam no Brasil. O Firebase Authentication processa os dados da conta, e o Geoapify processa a busca de endereço, fora do Brasil. As imagens do mapa vêm de servidores do Google Maps no exterior. Essa transferência se apoia em cláusulas-padrão contratuais aprovadas pela ANPD, adotadas nos contratos do Google Cloud (LGPD, art. 33, II, "b", e Resolução CD/ANPD nº 19/2024), e é necessária para executar o contrato que você pediu (art. 33, IX). Você pode pedir a íntegra das cláusulas pelo canal do item B.1; respondemos em até 15 dias (Resolução CD/ANPD nº 19/2024, art. 17).</p>
 
 <p>Quando os relatórios de falhas estão ativos no Android, o Sentry trata os dados técnicos na União Europeia.</p>
 
@@ -116,7 +117,7 @@
 <p>Quem sai do casal perde o acesso aos dados dele. O administrador só sai depois que o par sair.</p>
 
 <h2 id="b9">B.9 Segurança e incidentes</h2>
-<p>Adotamos medidas técnicas e administrativas para proteger seus dados (art. 46): comunicação cifrada, cifragem de ponta a ponta do conteúdo do casal (sem a chave, nem o controlador nem o Google leem esses dados; sem a chave e sem a chave de recuperação, não é possível recuperá-los), regras do banco de dados que negam todo acesso direto do aplicativo, verificação da sua identidade e do seu vínculo com o casal em toda requisição e registro de auditoria das alterações.</p>
+<p>Adotamos medidas técnicas e administrativas para proteger seus dados (art. 46): comunicação cifrada, cifragem de ponta a ponta do conteúdo do casal (sem a chave, nem o controlador nem o Google leem esses dados; sem a chave e sem a chave de recuperação, não é possível recuperá-los; a exceção é o texto digitado na busca de endereço, que vai em claro ao nosso servidor e ao provedor de busca para devolver sugestões), regras do banco de dados que negam todo acesso direto do aplicativo, verificação da sua identidade e do seu vínculo com o casal em toda requisição e registro de auditoria das alterações.</p>
 <p>Se ocorrer incidente de segurança que possa afetar significativamente seus direitos, comunicaremos você e a ANPD em até 3 dias úteis (6 dias úteis, por sermos agente de pequeno porte) a partir do momento em que soubermos que dados pessoais foram afetados, com o que aconteceu, quais dados, os riscos e o que estamos fazendo (LGPD, art. 48, e Resolução CD/ANPD nº 15/2024). Registramos todos os incidentes por 5 anos.</p>
 
 <h2 id="b10">B.10 Crianças e adolescentes</h2>

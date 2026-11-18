@@ -10,7 +10,7 @@
 <main>
 <p class="meta"><a href="./">TabulaHome</a> · <a href="termos.html">Termos de Uso</a></p>
 <h1>TabulaHome — Aviso de Privacidade</h1>
-<p class="meta">Versão 1.2 · Última atualização: 10/11/2026 · Elaborado com base na Lei nº 8.078/1990 (CDC), na Lei nº 9.609/1998 (Lei do Software) e na Lei nº 13.709/2018 (LGPD)</p>
+<p class="meta">Versão 1.3 · Última atualização: 18/11/2026 · Elaborado com base na Lei nº 8.078/1990 (CDC), na Lei nº 9.609/1998 (Lei do Software) e na Lei nº 13.709/2018 (LGPD)</p>
 
 <p>Este aviso é a Parte B dos <a href="termos.html">Termos de Uso do TabulaHome</a>.</p>
 <h2 id="parte-b">PARTE B — AVISO DE PRIVACIDADE (LGPD, art. 9º)</h2>
@@ -30,11 +30,13 @@
 <tr><td>Dados do lar: apelido, tipo e fuso; membros, moradores e convites (e-mail ou código)</td><td>Organizar e compartilhar os dados do lar</td><td>Execução de contrato (art. 7º, V)</td></tr>
 <tr><td>Manutenções, despensa, compras, preços, tarefas de limpeza, checklists e leituras de medidores</td><td>Lembretes, previsão de compras, rodízio de limpeza e alerta de consumo</td><td>Execução de contrato (art. 7º, V)</td></tr>
 <tr><td>Contas, compras compartilhadas, partes, transferências e faltas; motivo da falta (texto livre, opcional)</td><td>Dividir os gastos e acertar os saldos do mês</td><td>Execução de contrato (art. 7º, V)</td></tr>
+<tr><td>Anexos de contas (opcionais): código de pagamento, PDF da conta, comprovante e consumo</td><td>Guardar junto da conta o que o lar precisa para pagar e conferir</td><td>Execução de contrato (art. 7º, V)</td></tr>
 <tr><td>Viagens: nome dos viajantes, cotas, despesas e quem pagou</td><td>Dividir as despesas da viagem e calcular o acerto</td><td>Execução de contrato (art. 7º, V)</td></tr>
 <tr><td>Mapa de emergência: pontos, notas, telefones e foto (opcional)</td><td>Mostrar aos moradores onde ficam registros e quem chamar</td><td>Execução de contrato (art. 7º, V)</td></tr>
 <tr><td>Apelido de morador sem conta e nome de viajante sem conta</td><td>Distribuir tarefas e dividir despesas</td><td>Legítimo interesse (art. 7º, IX, e art. 10)</td></tr>
 <tr><td>Registros de segurança e de alterações (autor, ação e horário; endereço IP nas tentativas de acesso negadas)</td><td>Prevenir fraude e abuso, garantir integridade e permitir a defesa em eventual processo</td><td>Legítimo interesse (art. 7º, IX) e exercício regular de direitos (art. 7º, VI)</td></tr>
 <tr><td>Relatórios de falhas no Android (horário, versão e posições no código), quando ativos</td><td>Diagnosticar e corrigir falhas</td><td>Legítimo interesse (art. 7º, IX)</td></tr>
+<tr><td>Token técnico do aparelho no Firebase Cloud Messaging (inscrição no tópico de atualizações, sem ligação com a sua conta)</td><td>Avisar que há uma versão nova do Aplicativo</td><td>Legítimo interesse (art. 7º, IX)</td></tr>
 </tbody>
 </table>
 <p>No legítimo interesse, fizemos uma avaliação de que o tratamento é necessário, mínimo e esperado pelas pessoas envolvidas. Qualquer titular pode se opor pelo canal do item B.1 (art. 18, § 2º).</p>
@@ -49,6 +51,7 @@
 <tbody>
 <tr><td>Conta</td><td>Enquanto a conta existir; apagada na exclusão (item B.8)</td></tr>
 <tr><td>Dados do lar e das viagens</td><td>Enquanto o lar ou a viagem existir</td></tr>
+<tr><td>Anexos de contas</td><td>Enquanto a conta do lar existir; apagados quando você remove o anexo ou a conta</td></tr>
 <tr><td>Lançamentos de ex-membro e de ex-viajante</td><td>Enquanto o lar ou a viagem existir, sem o nome (item B.8)</td></tr>
 <tr><td>Registros de alterações do lar</td><td>Enquanto o lar existir; os seus são apagados na exclusão da conta</td></tr>
 <tr><td>Registros técnicos do servidor</td><td>14 dias</td></tr>
@@ -62,7 +65,7 @@
 <p>Não vendemos dados. Compartilhamos o mínimo necessário com:</p>
 <ul>
 <li><strong>Demais membros do seu lar e das suas viagens.</strong> Veem os dados do lar ou da viagem e o seu nome e e-mail, como descrito no <a href="termos.html#item-4">item 4 da Parte A</a>. Esse compartilhamento é a função central do Aplicativo e acontece por sua escolha ao entrar em um lar ou viagem, ou ao convidar alguém.</li>
-<li><strong>Google, operador.</strong> Faz o login (Firebase Authentication), mantém o banco de dados (Firestore) e o servidor (Cloud Run) do serviço e confirma que o pedido vem do Aplicativo original (Play Integrity e Firebase App Check), conforme a política de privacidade e os termos de tratamento de dados do Google Cloud.</li>
+<li><strong>Google, operador.</strong> Faz o login (Firebase Authentication), mantém o banco de dados (Firestore), os anexos de contas (Cloud Storage, região São Paulo) e o servidor (Cloud Run) do serviço, entrega o aviso de versão nova pelo Firebase Cloud Messaging (a mensagem leva só a faixa e o número da versão) e confirma que o pedido vem do Aplicativo original (Play Integrity e Firebase App Check), conforme a política de privacidade e os termos de tratamento de dados do Google Cloud.</li>
 <li><strong>Sua própria conta Google, por sua escolha.</strong> Se você tocar em "Agenda", o Aplicativo cria um calendário "TabulaHome" na sua conta e grava nele os lembretes de manutenção (permissão <code>calendar.app.created</code>, que só alcança esse calendário, nunca os seus outros). Esses dados vão direto do aparelho para a sua conta, sem passar pelos nossos servidores, e o seu uso segue a política de privacidade do Google. O Aplicativo usa os dados das APIs do Google apenas para essa função e segue a Política de Dados do Usuário dos Serviços de API do Google, incluindo os requisitos de uso limitado.</li>
 <li><strong>Sentry, operador.</strong> Quando os relatórios de falhas estão ativos no Android, o Sentry recebe dados técnicos na União Europeia para ajudar a corrigir o Aplicativo. Os relatórios não incluem mensagens de erro, dados da conta ou do lar, nem gravações de tela. O Sentry não guarda o endereço IP nos eventos.</li>
 <li><strong>Autoridades,</strong> quando a lei ou ordem judicial exigir.</li>
@@ -70,7 +73,7 @@
 <p>Os operadores tratam dados só em nosso nome e conforme nossas instruções (art. 39). Hoje não usamos provedor de inteligência artificial. Se isso mudar, atualizaremos este aviso, nomeando o provedor, e avisaremos no Aplicativo antes de começar.</p>
 
 <h2 id="b5">B.5 Transferência internacional</h2>
-<p>O banco de dados e o servidor ficam no Brasil. O Firebase Authentication processa os dados da conta, e o Play Integrity e o App Check processam dados técnicos do aparelho, na infraestrutura global do Google, fora do Brasil. Essa transferência se apoia em cláusulas-padrão contratuais aprovadas pela ANPD, adotadas nos contratos do Google Cloud (LGPD, art. 33, II, "b", e Resolução CD/ANPD nº 19/2024), e é necessária para executar o contrato que você pediu (art. 33, IX). Você pode pedir a íntegra das cláusulas pelo canal do item B.1; respondemos em até 15 dias (Resolução CD/ANPD nº 19/2024, art. 17).</p>
+<p>O banco de dados, os anexos e o servidor ficam no Brasil. O Firebase Authentication processa os dados da conta, e o Play Integrity, o App Check e o Firebase Cloud Messaging processam dados técnicos do aparelho, na infraestrutura global do Google, fora do Brasil. Essa transferência se apoia em cláusulas-padrão contratuais aprovadas pela ANPD, adotadas nos contratos do Google Cloud (LGPD, art. 33, II, "b", e Resolução CD/ANPD nº 19/2024), e é necessária para executar o contrato que você pediu (art. 33, IX). Você pode pedir a íntegra das cláusulas pelo canal do item B.1; respondemos em até 15 dias (Resolução CD/ANPD nº 19/2024, art. 17).</p>
 
 <p>Quando os relatórios de falhas estão ativos no Android, o Sentry trata os dados técnicos na União Europeia.</p>
 

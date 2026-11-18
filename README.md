@@ -17,7 +17,7 @@ Os sites existentes também ficam no Firebase Hosting. A configuração do Tabul
 |---|---|---|---|
 | TabulaCar | `https://tabulacar.web.app/` | `tabulacar-512917` | `npx firebase-tools deploy --only hosting:tabulacar --project tabulacar-512917` |
 | TabulaDuo | `https://tabuladuo.web.app/` | `tabuladuo` | `npx firebase-tools deploy --only hosting:tabuladuo --project tabuladuo` |
-| TabulaHome | `https://tabulahome.web.app/` | `tabulahome` | `npx firebase-tools deploy --only hosting:tabulahome --project tabulahome` |
+| TabulaHome | só GitHub Pages | — | **Não publique no Firebase:** `tabulahome.web.app` é o app web do TabulaHome, e o deploy deste repositório sobrescreveria o app |
 | TabulaPet | `https://tabulapet.web.app/` | `tabulapet` | `npx firebase-tools deploy --only hosting:tabulapet --project tabulapet` |
 
 Antes do primeiro deploy do TabulaPet, crie o site de Hosting `tabulapet` no projeto Firebase `tabulapet` (`firebase hosting:sites:create tabulapet --project tabulapet`). A configuração de Hosting está pronta, mas ainda não foi publicada.

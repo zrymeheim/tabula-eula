@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>TabulaDuo: código bônus do Plano Pro</title>
+<meta name="robots" content="noindex">
+<link rel="stylesheet" href="../style.css">
+</head>
+<body>
+<main>
+<h1>TabulaDuo</h1>
+<p>Você recebeu um código bônus do Plano Pro do TabulaDuo.</p>
+<p><a id="open" href="#">Abrir no aplicativo</a></p>
+<p class="meta">Código: <strong id="code"></strong></p>
+<p class="meta">Se o aplicativo não abrir, atualize ou instale o TabulaDuo, abra Ajustes, Plano Pro, e digite o código em Código bônus.</p>
+</main>
+<script>
+var code=(new URLSearchParams(location.hash.slice(1)).get("code")||new URLSearchParams(location.search).get("code")||"").toUpperCase().replace(/[^A-Z2-7]/g,"").slice(0,12);
+var link="tabuladuo://pro/"+code;
+document.getElementById("code").textContent=code;
+document.getElementById("open").href=link;
+if(code)location.href=link;
+</script>
+</body>
+</html>

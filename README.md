@@ -1,13 +1,13 @@
 # tabula-eula
 
-Páginas públicas dos apps TabulaCar, TabulaHome, TabulaDuo e TabulaPet, publicadas via GitHub Pages.
+Páginas públicas dos apps TabulaCar, TabulaHome, TabulaDuo, TabulaPet e Rota Atípica, publicadas via GitHub Pages.
 
-| Página | TabulaCar | TabulaHome | TabulaDuo | TabulaPet |
-|---|---|---|---|
-| Início | `tabulacar/` | `tabulahome/` | `tabuladuo/` | `tabulapet/` |
-| Termos de Uso (CLUF, Parte A) | `tabulacar/termos.html` | `tabulahome/termos.html` | `tabuladuo/termos.html` | `tabulapet/termos.html` |
-| Aviso de Privacidade (LGPD, Parte B) | `tabulacar/privacidade.html` | `tabulahome/privacidade.html` | `tabuladuo/privacidade.html` | `tabulapet/privacidade.html` |
-| Histórico de versões | `tabulacar/novidades.html` | `tabulahome/novidades.html` | `tabuladuo/novidades.html` | — |
+| Página | TabulaCar | TabulaHome | TabulaDuo | TabulaPet | Rota Atípica |
+|---|---|---|---|---|---|
+| Início | `tabulacar/` | `tabulahome/` | `tabuladuo/` | `tabulapet/` | `rotaatipica/` |
+| Termos de Uso (CLUF, Parte A) | `tabulacar/termos.html` | `tabulahome/termos.html` | `tabuladuo/termos.html` | `tabulapet/termos.html` | `rotaatipica/termos.html` |
+| Aviso de Privacidade (LGPD, Parte B) | `tabulacar/privacidade.html` | `tabulahome/privacidade.html` | `tabuladuo/privacidade.html` | `tabulapet/privacidade.html` | `rotaatipica/privacidade.html` |
+| Histórico de versões | `tabulacar/novidades.html` | `tabulahome/novidades.html` | `tabuladuo/novidades.html` | — | — |
 
 Os Termos e o Aviso de Privacidade formam um só documento: a versão e a data ficam iguais nas duas páginas. Ao mudar o texto, atualize as duas.
 
